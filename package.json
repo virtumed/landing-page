@@ -1,0 +1,14 @@
+{
+  "name": "landing-page",
+  "version": "1.0.0",
+  "repository": "git@github.com:virtumed/landing-page.git",
+  "license": "MIT",
+  "scripts": {
+    "start": "light-server -s dist/ -p 5000 -w \"dist/**/*.html, dist/**/*.css, dist/**/*.js\"",
+    "sass:watch": "sass --watch scss/main.scss dist/resources/css/main.css --no-source-map --style=compressed"
+  },
+  "dependencies": {
+    "light-server": "^2.9.1",
+    "node-sass": "npm:sass"
+  }
+}
