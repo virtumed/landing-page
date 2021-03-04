@@ -1,0 +1,37 @@
+@import "./variables";
+@import "./mixins";
+
+.main-section {
+  position: relative;
+
+  &__panel {
+    margin: 100px 0;
+
+    h1 {
+      color: #fff;
+      font-size: 56px;
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+
+    &__body {
+      margin-top: 32px;
+      margin-bottom: 0;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 30px;
+      max-width: 630px;
+
+      @include media-sm {
+        max-width: 100%;
+      }
+    }
+
+    &__footer {
+      margin-top: 48px;
+      font-size: 18px;
+      font-weight: 500;
+      color: $text-dark-color;
+    }
+  }
+}
