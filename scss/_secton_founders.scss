@@ -1,0 +1,52 @@
+@import "./variables";
+
+.founders-secton {
+  &__panel {
+    margin: 100px 0;
+
+    h4 {
+      margin-bottom: 0;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.5px;
+      color: $text-green-color;
+      text-align: center;
+    }
+
+    &__fouders-logos {
+      display: grid;
+      margin-top: 56px;
+      gap: 32px;
+      grid-template-columns: repeat(6, 1fr);
+
+      @include media-lg {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      @include media-sm {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @include media-xs {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      figure {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+          display: flex;
+
+          img {
+            max-width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
