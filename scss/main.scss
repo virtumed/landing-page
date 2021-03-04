@@ -15,6 +15,11 @@ body {
   .container {
     max-width: $max-width;
   }
+
+  main {
+    min-height: calc(100vh - 88px - 115px);
+  }
 }
 
 @import "./header";
+@import "./section_main";
