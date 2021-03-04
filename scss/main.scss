@@ -1,3 +1,5 @@
+@import "./variables";
+
 * {
   box-sizing: border-box;
 }
@@ -5,18 +7,13 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #201f33;
+  background-color: $bg-color;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #fff;
 
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-      monospace;
-  }
-
   .container {
-    max-width: 1200px;
+    max-width: $max-width;
   }
 }
 
