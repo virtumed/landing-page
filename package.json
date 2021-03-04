@@ -4,7 +4,7 @@
   "repository": "git@github.com:virtumed/landing-page.git",
   "license": "MIT",
   "scripts": {
-    "start": "light-server -s dist/ -p 5000 -w \"dist/**/*.html, dist/**/*.css, dist/**/*.js\"",
+    "start": "light-server -s dist/ -p 5000 -w \"dist/**/*.html, dist/**/*.css, dist/**/*.js\" -o",
     "sass:watch": "sass --watch scss/main.scss dist/resources/css/main.css --no-source-map --style=compressed"
   },
   "dependencies": {
