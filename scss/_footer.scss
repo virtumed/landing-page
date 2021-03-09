@@ -8,10 +8,26 @@ footer {
     margin: 40px 0;
 
     &__logo {
+      img {
+        object-fit: contain;
+        height: 36px;
+        width: 36px;
+      }
+
       p {
+        display: inline-block;
         margin-bottom: 0;
         font-size: 14px;
         line-height: 21px;
+
+        a {
+          font-weight: bold;
+          color: $text-green-color;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
       }
     }
 
