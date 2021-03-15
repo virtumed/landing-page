@@ -6,17 +6,17 @@
 
 @font-face {
   font-family: "Nexa";
-  src: url("/resources/fonts/NexaDemo-Light.woff") format("woff"),
-    url("/resources/fonts/NexaDemo-Light.ttf") format("truetype"),
-    url("/resources/fonts/NexaDemo-Light.otf") format("opentype");
+  src: url("#{$assets-path}/fonts/NexaDemo-Light.woff") format("woff"),
+    url("#{$assets-path}/fonts/NexaDemo-Light.ttf") format("truetype"),
+    url("#{$assets-path}/fonts/NexaDemo-Light.otf") format("opentype");
   font-weight: 300;
 }
 
 @font-face {
   font-family: "Nexa";
-  src: url("/resources/fonts/NexaDemo-Bold.woff") format("woff"),
-    url("/resources/fonts/NexaDemo-Bold.ttf") format("truetype"),
-    url("/resources/fonts/NexaDemo-Bold.otf") format("opentype");
+  src: url("#{$assets-path}/fonts/NexaDemo-Bold.woff") format("woff"),
+    url("#{$assets-path}/fonts/NexaDemo-Bold.ttf") format("truetype"),
+    url("#{$assets-path}/fonts/NexaDemo-Bold.otf") format("opentype");
   font-weight: 700;
 }
 
