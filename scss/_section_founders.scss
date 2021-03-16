@@ -18,15 +18,7 @@
       display: grid;
       margin-top: 56px;
       gap: 32px;
-      grid-template-columns: repeat(6, 1fr);
-
-      @include media-lg {
-        grid-template-columns: repeat(4, 1fr);
-      }
-
-      @include media-sm {
-        grid-template-columns: repeat(3, 1fr);
-      }
+      grid-template-columns: repeat(3, 1fr);
 
       @include media-xs {
         grid-template-columns: repeat(2, 1fr);
