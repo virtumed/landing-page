@@ -6,10 +6,13 @@
   "scripts": {
     "start": "light-server -s dist/ -p 5000 -w \"dist/**/*.html, dist/**/*.css, dist/**/*.js\" -o",
     "sass:watch": "sass --watch scss/main.scss dist/resources/css/main.css --no-source-map --style=compressed",
-    "deploy": "git push origin :gh-pages && git subtree push --prefix dist origin gh-pages"
+    "deploy": "gh-pages --dist 'dist' --branch 'gh-pages'"
   },
   "dependencies": {
     "light-server": "^2.9.1",
     "node-sass": "npm:sass"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }
