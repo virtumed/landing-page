@@ -18,7 +18,7 @@ yarn
 yarn start
 ```
 
-should open a new tab with `localhost:5000` in your defauld browser
+should open a new tab with `localhost:5000` in your default browser
 
 ### Start sass compiler
 
