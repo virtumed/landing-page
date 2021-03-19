@@ -16,6 +16,14 @@
       font-size: 56px;
       font-weight: 700;
       margin-bottom: 0;
+
+      @include media-sm {
+        font-size: 48px;
+      }
+
+      @include media-xs {
+        font-size: 42px;
+      }
     }
 
     &__body {
