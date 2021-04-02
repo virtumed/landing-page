@@ -16,18 +16,15 @@
     }
 
     &__quotes-grid {
-      display: grid;
+      display: flex;
+      flex-wrap: wrap;
       margin: 56px 0;
-      gap: 32px;
-      grid-template-columns: repeat(2, 1fr);
-
-      @include media-sm {
-        grid-template-columns: repeat(1, 1fr);
-      }
 
       #{$panel}__quote-contaier {
         padding: 32px;
-        display: flex;
+        margin: 16px;
+        min-width: calc(50% - 32px);
+        flex: 1;
         min-height: 260px;
         background: linear-gradient(
           160deg,
@@ -45,6 +42,26 @@
           font-size: 20px;
           line-height: 30px;
           font-weight: bold;
+        }
+
+        @include media-sm {
+          min-width: 100%;
+          margin: 16px 0;
+        }
+      }
+
+      @supports (display: grid) {
+        display: grid;
+        gap: 32px;
+        grid-template-columns: repeat(2, 1fr);
+
+        @include media-sm {
+          grid-template-columns: repeat(1, 1fr);
+        }
+
+        #{$panel}__quote-contaier {
+          margin: 0;
+          min-width: unset;
         }
       }
     }
