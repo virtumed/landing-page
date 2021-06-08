@@ -20,7 +20,7 @@
       flex-wrap: wrap;
       margin: 56px 0;
 
-      #{$panel}__quote-contaier {
+      #{$panel}__quote-container {
         padding: 32px;
         margin: 16px;
         min-width: calc(50% - 32px);
@@ -59,7 +59,7 @@
           grid-template-columns: repeat(1, 1fr);
         }
 
-        #{$panel}__quote-contaier {
+        #{$panel}__quote-container {
           margin: 0;
           min-width: unset;
         }
